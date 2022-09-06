@@ -8,7 +8,9 @@
 
 
 <script>
+  import clientPageVue from './views/clientPage.vue';
   export default{
+    clientPageVue
     
   }
 </script>
