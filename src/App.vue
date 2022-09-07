@@ -12,7 +12,7 @@
   import cookies from vue-cookies
   import clientPageVue from './views/clientPage.vue';
   import restaurantsPageVue from './views/restaurantsPage.vue';
-  import Discoverpagevue from './vue/Discoverpage.vue';
+  import menu from './views/menu.vue'
   export default{
     methods:{
       create_cookie(){
@@ -32,7 +32,7 @@
         }};
         clientPageVue
         restaurantsPageVue
-        Discoverpagevue    
+        menu    
     
   
 </script>

@@ -20,18 +20,43 @@
 
 <script>
     import axios from "axios"
+    import cookies from "vue_cookies"
+
     
     export default {
+        methods:{
+      create_cookie(){
+        cookies.set("username", "password")
+      }
+    },
+    
     mounted(){
         axios.get({ url:`https://innotechfoodie.ml/api/client`,
-             'x-api-key': `tiSBwXqgUWRLQfxsygW`
+             'x-api-key': `tiSBwXqgUWRLQfxsygW`,
+            
+            
     
             }).then((response) => {
-                console.log("successful test")
+                return{
+                    created_at:(String),
+                    email: (String),
+                    first_name:(String),
+                    last_name: (String),
+                    id:(Number),
+                    img_url:(String),
+                    username:(String)
+
+                }
             }).catch((error) => {
-                console.log("ERROR")
+                return ("ERROR 404 user not found")
             })
         }};
+        axios.post({
+
+
+
+        })
+        
     
     
         
