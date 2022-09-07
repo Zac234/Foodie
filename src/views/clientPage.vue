@@ -12,6 +12,9 @@
             <input type="password" name="undefined" id="test001">
             <button> login</button>
         </div>
+        <div id="Footer">
+            <p>foodie inc &copy;</p>
+        </div>
     </div>
 </template>
 

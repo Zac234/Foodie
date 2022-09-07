@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import clientPage from
+
 Vue.use(VueRouter)
 
 const routes = [

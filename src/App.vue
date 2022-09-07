@@ -8,11 +8,33 @@
 
 
 <script>
+  import axios from 'axios'
+  import cookies from vue-cookies
   import clientPageVue from './views/clientPage.vue';
+  import restaurantsPageVue from './views/restaurantsPage.vue';
+  import Discoverpagevue from './vue/Discoverpage.vue';
   export default{
-    clientPageVue
+    methods:{
+      create_cookie(){
+        cookies.set("username", "password")
+      }
+    },
+
+    mounted(){
+        axios.get({ url:`https://innotechfoodie.ml/api/client`,
+             'x-api-key': `tiSBwXqgUWRLQfxsygW`
     
-  }
+            }).then((response) => {
+                console.log("successful test")
+            }).catch((error) => {
+                console.log("ERROR")
+            })
+        }};
+        clientPageVue
+        restaurantsPageVue
+        Discoverpagevue    
+    
+  
 </script>
 
 <style>
